@@ -1,0 +1,8 @@
+#Default /graphiql
+graphiql:
+  mapping: /app-ui
+
+#Default /graphql
+graphql:
+  servlet:
+    mapping: /user-service
