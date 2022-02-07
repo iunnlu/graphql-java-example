@@ -1,8 +1,20 @@
 #Default /graphiql
-graphiql:
-  mapping: /app-ui
+#graphiql:
+#  mapping: /app-ui
 
-#Default /graphql
-graphql:
-  servlet:
-    mapping: /user-service
+#Default /graphql_example
+#graphql:
+#  servlet:
+#    mapping: /user-service
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        default_schema: public
+  datasource:
+    url: jdbc:postgresql://localhost:5432/graphql_example
+    username: ilhanunlu
+    password: g3229491

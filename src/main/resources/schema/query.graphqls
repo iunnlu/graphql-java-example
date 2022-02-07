@@ -1,9 +1,17 @@
 type Query {
     firstQuery: String
     getFullName(sampleRequest: SampleRequest): String
+    getStudentById(id: Long): StudentDto
 }
 
 input SampleRequest {
     firstName: String
     lastName: String
+}
+
+type StudentDto {
+    id: Long
+    firstName: String
+    lastName: String
+    email: String
 }
